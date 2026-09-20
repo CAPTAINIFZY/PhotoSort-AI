@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                        */
+/* ------------------------------------------------------------------ */
+:root {
+  --bg-primary:   #0d0f14;
+  --bg-secondary: #13161e;
+  --bg-card:      #1a1d27;
+  --border:       #2a2d3a;
+  --text-primary: #f0f2ff;
+  --text-muted:   #8b8fa8;
+  --accent:       #6366f1;
+  --accent-glow:  rgba(99, 102, 241, 0.35);
+  --success:      #22c55e;
+  --danger:       #ef4444;
+}
+
+/* ------------------------------------------------------------------ */
+/* Base resets                                                          */
+/* ------------------------------------------------------------------ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+/* ------------------------------------------------------------------ */
+/* Utility: glass card                                                  */
+/* ------------------------------------------------------------------ */
+.glass-card {
+  background: rgba(26, 29, 39, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}

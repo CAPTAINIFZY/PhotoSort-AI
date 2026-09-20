@@ -1,0 +1,14 @@
+{
+  "sharpness": 0.25,
+  "exposure": 0.15,
+  "face_quality": 0.2,
+  "composition": 0.2,
+  "uniqueness": 0.2,
+  "blur_penalty": 0.3,
+  "closed_eye_penalty": 0.2,
+  "duplicate_penalty": 0.4,
+  "thresholds": {
+    "keep": 75,
+    "review": 50
+  }
+}
